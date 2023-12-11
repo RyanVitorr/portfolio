@@ -1,5 +1,8 @@
-import { useState } from 'react';
-import './App.css';
+
+import { Principal } from './componentesStyle/Principal.style.jsx';
+
+
+
 
 
 function App() {
@@ -7,7 +10,15 @@ function App() {
 
   return (
     <Wrapper>
-      
+      <Principal>
+        <div>
+          <p>Holá,</p>
+          
+          <h1>Me chamo Ryan, Sou um desenvolvedor Front-end.</h1>
+          
+          <p>Seja bem vindo(a) ao meu portfólio.</p>          
+        </div>
+      </Principal>
     </Wrapper>
   )
 };
