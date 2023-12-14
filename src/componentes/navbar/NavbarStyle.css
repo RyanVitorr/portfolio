@@ -1,0 +1,46 @@
+/* navbar */
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border-left: 1px solid;
+}
+
+.div-icone-puxar-nav {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    left: -25px;
+    top: 30px;
+    background-color: red;
+    border-radius: 50% 0 0 50% ;
+}
+
+.div-principal-nav {
+    display: block;
+    width: 55px;
+}
+
+.div-principal-nav > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 25px;
+}
+
+.div-principal-nav > ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: blue;
+    cursor: pointer;
+}
