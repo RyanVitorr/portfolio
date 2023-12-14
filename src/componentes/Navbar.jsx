@@ -3,6 +3,8 @@ import Principal from './Principal';
 
 const Navbar = () => {
 
+
+
   return (
     <nav className="navbar">
         <div className="div-icone-puxar-nav"></div>
