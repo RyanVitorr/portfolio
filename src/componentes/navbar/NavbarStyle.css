@@ -18,12 +18,14 @@
     top: 30px;
     background-color: red;
     border-radius: 50% 0 0 50% ;
+    cursor: pointer;
 }
 
 .div-principal-nav {
-    display: block;
+    display: none;
     width: 55px;
 }
+.ativo {display: block;}
 
 .div-principal-nav > ul {
     display: flex;

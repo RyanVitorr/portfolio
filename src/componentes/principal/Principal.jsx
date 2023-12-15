@@ -3,22 +3,23 @@ import '../principal/PrincipalStyle.css';
 
 
 import Home from '../home/Home.jsx';
+import Sobre from '../sobre/Sobre.jsx';
 
 const Principal = () => {
   //function home on/off
-  const [home, setHome] = useState(true);
+  const [home, setHome] = useState(false);
   function onOffHome () {
-    setHome(!home);
+    setHome(true);
     setSobre(false);
     setSkills(false);
     setProjetos(false);
   };
 
   //function sobre on/off
-  const [sobre, setSobre] = useState();
+  const [sobre, setSobre] = useState(true);
   function onOffSobre () {
     setHome(false);
-    setSobre(!sobre);
+    setSobre(true);
     setSkills(false);
     setProjetos(false);
   };
@@ -28,7 +29,7 @@ const Principal = () => {
   function onOffSkills () {
     setHome(false);
     setSobre(false);
-    setSkills(!skills);
+    setSkills(true);
     setProjetos(false);
   };
 
@@ -38,7 +39,7 @@ const Principal = () => {
     setHome(false);
     setSobre(false);
     setSkills(false);
-    setProjetos(!projetos);
+    setProjetos(true);
   };
     
   return (
@@ -46,6 +47,10 @@ const Principal = () => {
       {home && (
         <Home />
       )}
+      {sobre && (
+        <Sobre />
+      )}
+      
     </section>
   )
 }
