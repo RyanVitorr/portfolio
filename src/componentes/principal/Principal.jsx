@@ -4,10 +4,11 @@ import '../principal/PrincipalStyle.css';
 
 import Home from '../home/Home.jsx';
 import Sobre from '../sobre/Sobre.jsx';
+import Skills from '../skills/Skills.jsx';
 
 const Principal = () => {
   //function home on/off
-  const [home, setHome] = useState(false);
+  const [home, setHome] = useState(true);
   function onOffHome () {
     setHome(true);
     setSobre(false);
@@ -16,7 +17,7 @@ const Principal = () => {
   };
 
   //function sobre on/off
-  const [sobre, setSobre] = useState(true);
+  const [sobre, setSobre] = useState();
   function onOffSobre () {
     setHome(false);
     setSobre(true);
@@ -49,6 +50,9 @@ const Principal = () => {
       )}
       {sobre && (
         <Sobre />
+      )}
+      {skills && (
+        <Skills />
       )}
       
     </section>
