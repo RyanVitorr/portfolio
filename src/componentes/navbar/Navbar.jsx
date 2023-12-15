@@ -2,13 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import '../navbar/NavbarStyle.css';
 
-import Principal from '../principal/Principal';
 
-const Navbar = () => {
-  const [state, setState] = useState(false);
-  const toggle = ()=> {
-    setState(!state);
-  };
+const Navbar = ({onHome, onSobre, onSkills, onProjetos, state, toggle}) => {
 
   return (
     <nav className="navbar">
@@ -16,13 +11,13 @@ const Navbar = () => {
        
       <div className={"div-principal-nav " + (state ? "ativo":"")}>
         <ul>
-          <li><i className="fa-solid fa-user"></i></li>
+          <li onClick={onHome} ><i className="fa-solid fa-user"></i></li>
            
-          <li><i className="fa-solid fa-user"></i></li>
+          <li onClick={onSobre} ><i className="fa-solid fa-user"></i></li>
             
-          <li><i className="fa-solid fa-user"></i></li>
+          <li onClick={onSkills} ><i className="fa-solid fa-user"></i></li>
             
-          <li><i className="fa-solid fa-user"></i></li>
+          <li onClick={onProjetos} ><i className="fa-solid fa-user"></i></li>
         </ul>
       </div>
     </nav>

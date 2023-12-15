@@ -1,9 +1,8 @@
 import React from 'react';
 import '../home/HomeStyle.css';
-
 import { Button } from '../../componentesStyle/Button.style.jsx';
 
-const Home = () => {
+const Home = ({onSobre}) => {
   return (
     <section className="home">  
         <div className="conteudo-text-home">
@@ -15,7 +14,7 @@ const Home = () => {
         </div>
         
         <div className="area-sobre-home">
-            <Button>Sobre Mim!</Button>
+            <Button onClick={onSobre}>Sobre Mim!</Button>
                 
             <div className="icons-social">
                 <a href="">

@@ -3,14 +3,74 @@ import { Wrapper } from "./componentesStyle/Wrapper.style.jsx";
 import Principal from "./componentes/principal/Principal.jsx";
 import Navbar from "./componentes/navbar/Navbar.jsx";
 
-
 function App() {
+    const [state, setState] = useState(false);
+    const toggle = ()=> {
+      setState(!state);
+    };
+
+    //function home on/off
+    const [home, setHome] = useState(true);
+    const onOffHome = ()=> {
+      setHome(true);
+      setSobre(false);
+      setSkills(false);
+      setProjetos(false);
+      toggle();
+    };
   
+    //function sobre on/off
+    const [sobre, setSobre] = useState();
+    const onOffSobre = ()=> {
+      setHome(false);
+      setSobre(true);
+      setSkills(false);
+      setProjetos(false);
+      toggle();
+    };
+    const onOffSobreSemToggle = ()=> {
+      setHome(false);
+      setSobre(true);
+      setSkills(false);
+      setProjetos(false);
+    };
+  
+    //function skills on/off
+    const [skills, setSkills] = useState();
+    const onOffSkills = ()=> {
+      setHome(false);
+      setSobre(false);
+      setSkills(true);
+      setProjetos(false);
+      toggle();
+    };
+  
+    //function projetos on/off
+    const [projetos, setProjetos] = useState();
+    const onOffProjetos = ()=> {
+      setHome(false);
+      setSobre(false);
+      setSkills(false);
+      setProjetos(true);
+      toggle();
+    };
   return (
     <Wrapper>
-      <Principal />
+      <Principal home={home} 
+      sobre={sobre}
+      skills={skills}
+      projetos={projetos}
+      onSobre={onOffSobreSemToggle} 
+      />
     
-      <Navbar />
+      <Navbar onHome={onOffHome} 
+      onSobre={onOffSobre} 
+      onSkills={onOffSkills} 
+      onProjetos={onOffProjetos}
+      state={state}
+      toggle={toggle}
+      />
+
     </Wrapper>
   ) 
    
