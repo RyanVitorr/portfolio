@@ -5,7 +5,6 @@
     align-items: center;
     height: 100%;
     padding: 0;
-    margin: 0;
     border-left: 1px solid rgba(180, 180, 180, 0.849);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.658);
 }
@@ -14,7 +13,7 @@
     display: block;
     position: absolute;
     width: 25px;
-    height: 30px;
+    height: 25px;
     left: -25px;
     top: 30px;
     background-color: red;
@@ -34,7 +33,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 25px;
+    gap: 25px;  
 }
 
 .div-principal-nav > ul > li {
@@ -46,4 +45,20 @@
     border-radius: 50%;
     background-color: blue;
     cursor: pointer;
+}
+
+
+@media only screen and (min-width: 450px) {
+    .navbar {
+        margin-right: 5px;
+        border-radius: 10px;
+        height: 99%;
+    }
+
+    .div-principal-nav {
+        display: block;
+    }
+    .div-icone-puxar-nav {
+        display: none;
+    }
 }

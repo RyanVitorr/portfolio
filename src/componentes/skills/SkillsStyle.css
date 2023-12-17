@@ -10,13 +10,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 700px;
+    max-width: 950px;
     gap: 20px;
 }
 
 .infos-skills {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -28,22 +28,6 @@
     overflow-y: scroll;
 }
 
-@media only screen and (min-width: 450px) {
-    .infos-skills {   
-        grid-template-columns: auto auto auto;
-    }
-}
-@media only screen and (min-width: 650px) {
-    .infos-skills {   
-        grid-template-columns: auto auto auto auto;
-    }
-}
-@media only screen and (min-width: 650px) {
-    .infos-skills {   
-        grid-template-columns: auto auto auto auto auto;
-    }
-}
-
 .infos-skills::-webkit-scrollbar {
     width: 5px;
 }
@@ -52,18 +36,29 @@
     padding: 10px;
 }
 
-.card-skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 120px;
-    gap: 10px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.548);
-    border-radius: 10px;
-    background-color: rgba(189, 187, 187, 0.589);;
+
+@media only screen and (min-width: 350px) {
+    .infos-skills {   
+        max-height: 660px;
+    }
 }
 
-.icone-skill > i {font-size: 25px;}
-.level-skill > i {color: var(--cor3);}
+@media only screen and (min-width: 500px) {
+    .infos-skills {   
+        grid-template-columns: auto auto;
+        gap: 1.5rem;
+        max-height: 665px;
+    }
+}
+@media only screen and (min-width: 730px) {
+    .infos-skills {   
+        grid-template-columns: auto auto auto;
+        max-height: 650px;
+    }
+}
+@media only screen and (min-width: 960px) {
+    .infos-skills {   
+        grid-template-columns: auto auto auto auto;
+        
+    }
+}

@@ -1,0 +1,72 @@
+.card-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 220px;
+    gap: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.548);
+    border-radius: 10px;
+    background-color: rgba(184, 184, 184, 0.76);
+    cursor: pointer;
+    position: relative;
+}
+
+.nome-skill {
+    color: var(--cor3); 
+    margin-top: 10px;
+}
+
+.icone-skill > i {
+    font-size: 70px; 
+    color: var(--cor3);}
+
+.level-skill {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+}
+.level-skill > i {
+    color: var(--cor3); 
+    font-size: 25px;
+}
+
+.info-hover-skill {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    color: rgba(4, 89, 248, 0.822);
+}
+
+.info-hover-skill > p {
+    font-size: 18px; 
+    margin-bottom: 10px;
+}
+
+.text-sobre-skill {
+    display: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.548);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 50% 50%;
+    background-color: rgb(184, 184, 184);;
+}
+.card-skills:hover .text-sobre-skill{display: flex;}
+
+.text-sobre-skill > p {  
+    line-height: 25px;
+    font-size: 18px;
+}
