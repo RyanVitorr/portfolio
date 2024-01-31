@@ -23,8 +23,12 @@
 
 .div-principal-nav {
     display: none;
+    align-items: center;
+    justify-content: center;
     width: 55px;
+
 }
+
 .ativo {display: block;}
 
 .div-principal-nav > ul {
@@ -53,10 +57,15 @@
         margin-right: 5px;
         border-radius: 10px;
         height: 99%;
+        border: none;
+        box-shadow: none;
     }
 
     .div-principal-nav {
         display: block;
+        padding: 15px 0;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.658);
+        border-radius: 10px;
     }
     .div-icone-puxar-nav {
         display: none;

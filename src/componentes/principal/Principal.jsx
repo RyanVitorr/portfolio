@@ -19,8 +19,6 @@ const Principal = ({home, sobre, skills, onSobre}) => {
       {skills && (
         <Skills />
       )}
-  
-      
     </section>
   )
 }
