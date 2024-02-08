@@ -2,7 +2,7 @@ import React from 'react';
 import '../sobre/SobreStyle.css';
 
 const Sobre = () => {
-    const apresentacao = "Olá! Sou o Ryan Vitor, estudante de ADS, entusiasta da tecnologia e desenvolvedor Front-end com 7 meses de experiência. Estou procurando uma oportunidade de estágio para aprimorar minhas habilidades como Front-end e explorar o Back-end, com o objetivo de me tornar um desenvolvedor Full Stack. Estou animado para contribuir com minha paixão pela programação e crescer profissionalmente em um ambiente desafiador.";
+    const apresentacao = "Olá! Sou Ryan Vitor, estudante de ADS, entusiasta da tecnologia e desenvolvedor Front-end com 7 meses de experiência. Estou procurando uma oportunidade de estágio para aprimorar minhas habilidades como Front-end e explorar o Back-end, com o objetivo de me tornar um desenvolvedor Full Stack. Estou animado para contribuir com minha paixão pela programação e crescer profissionalmente em um ambiente desafiador.";
 
   return (
     <section className="sobre">
@@ -37,7 +37,6 @@ const Sobre = () => {
                     <a><i className="bi bi-github"></i></a>
                 
                     <a><i className="bi bi-linkedin"></i></a>
-                    <a><i className="bi bi-whatsapp"></i></a>
                 </div>
             </div>
         </div>
