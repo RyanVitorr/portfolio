@@ -9,7 +9,8 @@ const Projetos = () => {
       img: "/img/reading-time.png",
       texto: "Reading-Time é um site de registro de leitura, que permite aos usuários acompanhar os livros que estão lendo, fornecendo uma forma eficiente de gerenciar sua lista de leitura.",
       mostrarTexto: false,
-      completo: false
+      completo: false,
+      link:""
     },
     {
       id: 2,
@@ -17,7 +18,8 @@ const Projetos = () => {
       img: "/img/todolist.png",
       texto: "Lista de Tarefas é um site que permite aos usuários criar, organizar e gerenciar suas tarefas de forma eficiente.",
       mostrarTexto: false,
-      completo: true
+      completo: true,
+      link:""
     },
   ]);
 
@@ -72,11 +74,11 @@ const Projetos = () => {
                     </div>
                   </div>
                   <div className='Link-projeto'>
-                    <a href="">Ir para o site</a>
+                    <a href={projetos.link} target='_blank' rel="noopener noreferrer">Ir para o site</a>
                   </div>
                 </div>
 
-                <div key={projetos.id} className='saiba-mais' onClick={()=>{handleClick(projetos.id)}}>
+                <div className='saiba-mais' onClick={()=>{handleClick(projetos.id)}}>
                   <button>{saibaMais}</button>
                 </div>
               </div>

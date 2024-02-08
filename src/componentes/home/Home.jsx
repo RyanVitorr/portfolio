@@ -17,11 +17,11 @@ const Home = ({ sobre, onSobre }) => {
             <Button onClick={onSobre}>Sobre Mim!</Button>
                 
             <div className="icons-social">
-                <a href="">
+                <a href="https://github.com/RyanVitorr" target='_blank' rel="noopener noreferrer">
                     <i className="bi bi-github"></i>
                 </a>
          
-                <a href="">
+                <a href="https://www.linkedin.com/in/ryan-vitor-5b0522288/" target='_blank' rel="noopener noreferrer">
                     <i className="bi bi-linkedin"></i>
                 </a>
             </div>

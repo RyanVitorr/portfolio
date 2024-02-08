@@ -34,9 +34,9 @@ const Sobre = () => {
                     <span className="linha-titulo"></span>
                 </div>
                 <div className="infos-redes">
-                    <a><i className="bi bi-github"></i></a>
+                    <a href="https://github.com/RyanVitorr" target='_blank' rel="noopener noreferrer"><i className="bi bi-github"></i></a>
                 
-                    <a><i className="bi bi-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/ryan-vitor-5b0522288/" target='_blank' rel="noopener noreferrer"><i className="bi bi-linkedin"></i></a>
                 </div>
             </div>
         </div>
