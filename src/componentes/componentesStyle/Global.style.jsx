@@ -20,8 +20,7 @@ export const Global = createGlobalStyle`
     }
 
     body {
-        background-color: var(--cor5);
+        background-color: var(--cor7);
     }
-
 
 `

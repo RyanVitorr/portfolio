@@ -1,0 +1,16 @@
+.container-nome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 8px;
+    position: absolute;
+    right: 50px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.548);
+    border-radius: 8px;
+    color: rgb(80, 80, 80);
+    background-color: rgba(78, 117, 190, 0.884);
+}
+
+.container-nome > p {
+    font-weight: bolder;
+}

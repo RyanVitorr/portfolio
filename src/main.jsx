@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
-import { Global } from './componentesStyle/Global.style.jsx';
+import App from './pages/App.jsx';
+import { Global } from './componentes/componentesStyle/Global.style.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

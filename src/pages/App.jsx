@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { Wrapper } from "./componentesStyle/Wrapper.style.jsx";
-import Principal from "./componentes/principal/Principal.jsx";
-import Navbar from "./componentes/navbar/Navbar.jsx";
+import { Wrapper } from "../componentes/componentesStyle/Wrapper.style.jsx";
+import Principal from "../componentes/principal/Principal.jsx";
+import Navbar from "../componentes/navbar/Navbar.jsx";
 
 function App() {
-    const [state, setState] = useState(false);
-    const toggle = ()=> {
-      setState(!state);
-    };
+  const [state, setState] = useState(false);
+  const toggle = ()=> {
+    setState(!state);
+  };
 
     //function home on/off
     const [home, setHome] = useState(true);
@@ -27,12 +27,6 @@ function App() {
       setSkills(false);
       setProjetos(false);
       toggle();
-    };
-    const onOffSobreSemToggle = ()=> {
-      setHome(false);
-      setSobre(true);
-      setSkills(false);
-      setProjetos(false);
     };
   
     //function skills on/off
@@ -60,7 +54,7 @@ function App() {
       sobre={sobre}
       skills={skills}
       projetos={projetos}
-      onSobre={onOffSobreSemToggle} 
+      onSobre={onOffSobre}
       />
     
       <Navbar onHome={onOffHome} 

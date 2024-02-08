@@ -1,23 +1,26 @@
 import React, { useState } from 'react';
-import '../principal/PrincipalStyle.css';
-import App from '../../App.jsx';
+import './PrincipalStyle.css';
 
 import Home from '../home/Home.jsx';
 import Sobre from '../sobre/Sobre.jsx';
 import Skills from '../skills/Skills.jsx';
+import Projetos from '../projetos/Projetos.jsx'
 
-const Principal = ({home, sobre, skills, onSobre}) => {
+const Principal = ({home, sobre, skills, projetos, onSobre }) => {
    
   return (
     <section className="principal">
       {home && (
-        <Home onSobre={onSobre}/>
+        <Home sobre={sobre} onSobre={onSobre}/>
       )}
       {sobre && (
         <Sobre />
       )}
       {skills && (
         <Skills />
+      )}
+      {projetos && (
+        <Projetos />
       )}
     </section>
   )

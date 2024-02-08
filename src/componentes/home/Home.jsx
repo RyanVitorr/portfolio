@@ -1,8 +1,8 @@
 import React from 'react';
 import '../home/HomeStyle.css';
-import { Button } from '../../componentesStyle/Button.style.jsx';
+import { Button } from '../componentesStyle/Button.style';
 
-const Home = ({onSobre}) => {
+const Home = ({ sobre, onSobre }) => {
   return (
     <section className="home">  
         <div className="conteudo-text-home">
@@ -18,11 +18,11 @@ const Home = ({onSobre}) => {
                 
             <div className="icons-social">
                 <a href="">
-                    <i className="fa-solid fa-user"></i>
+                    <i className="bi bi-github"></i>
                 </a>
          
                 <a href="">
-                    <i className="fa-solid fa-user"></i>
+                    <i className="bi bi-linkedin"></i>
                 </a>
             </div>
         </div>

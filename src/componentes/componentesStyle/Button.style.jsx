@@ -13,4 +13,3 @@ export const Button = styled.button `
     color: var(--cor4);
     cursor: pointer;
 `
-

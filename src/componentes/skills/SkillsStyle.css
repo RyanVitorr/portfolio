@@ -1,9 +1,12 @@
+@charset "UTF-8";
+
 .skills {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding: 10px;
 }
 
 .conteudo-skills {
@@ -12,6 +15,11 @@
     width: 100%;
     max-width: 950px;
     gap: 20px;
+}
+
+.titulo-skills {
+    padding: 10px;
+    color: rgb(80, 80, 80);
 }
 
 .infos-skills {
@@ -32,10 +40,6 @@
     width: 5px;
 }
 
-.titulo-skills {
-    padding: 10px;
-}
-
 .card-skills {
     display: flex;
     flex-direction: column;
@@ -46,19 +50,19 @@
     gap: 15px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.548);
     border-radius: 10px;
-    background-color: rgba(184, 184, 184, 0.76);
+    background-color: rgba(78, 117, 190, 0.74);
     cursor: pointer;
     position: relative;
 }
 
 .nome-skill {
-    color: var(--cor3); 
+    color: var(--cor4); 
     margin-top: 10px;
 }
 
 .icone-skill > i {
     font-size: 70px; 
-    color: var(--cor3);}
+    color: var(--cor4);}
 
 .level-skill {
     display: flex; 
@@ -68,7 +72,7 @@
     margin: 0;
 }
 .level-skill > i {
-    color: var(--cor3); 
+    color: var(--cor4); 
     font-size: 25px;
 }
 
@@ -84,6 +88,7 @@
 .info-hover-skill > p {
     font-size: 18px; 
     margin-bottom: 10px;
+    color: var(--cor4);
 }
 
 .text-sobre-skill {
@@ -100,13 +105,14 @@
     left: 0;
     bottom: 0;
     transition: 50% 50%;
-    background-color: rgb(184, 184, 184);;
+    background-color: rgb(109, 141, 201);
 }
 .card-skills:hover .text-sobre-skill{display: flex;}
 
 .text-sobre-skill > p {  
     line-height: 25px;
     font-size: 18px;
+    color: var(--cor4);
 }
 
 

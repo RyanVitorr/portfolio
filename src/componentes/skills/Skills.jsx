@@ -13,24 +13,28 @@ const Skills = () => {
       texto: "/* A Linguagem de Marcação de Hipertexto (HTML) é a linguagem de marcação mais utilizada para criar aplicações e páginas na web. */"
     },
     {
+      id: 2,
       nome: "CSS3",
       icone: "fa-brands fa-css3",
       level: 4,
       texto: "/* CSS3 é a terceira mais nova versão das famosas Cascading Style Sheets (ou simplesmente CSS), onde se define estilos para seu projeto web. */"
     },
     {
+      id: 3,
       nome: "JavaScript",
       icone: "fa-brands fa-js",
       level: 4,
       texto: "/* JavaScript é uma linguagem de programação de script em alto nível. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web. */"
     }, 
     {
+      id: 4,
       nome: "React",
       icone: "fa-brands fa-react",
       level: 3,
       texto: "/* O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. */"
     }, 
     {
+      id: 5,
       nome: "Node.js",
       icone: "fa-brands fa-node",
       level: 2,
@@ -40,6 +44,7 @@ const Skills = () => {
 
   /*  
     {
+      id: ,
       nome: ,
       icone: ,
       level: ,
@@ -58,7 +63,7 @@ const Skills = () => {
 
         <div className="infos-skills">
           {skills.map((skill) => (
-            <div className="card-skills">
+            <div key={skill.id} className="card-skills">
               <div className="nome-skill">
                 <h1>{skill.nome}</h1>
               </div>
