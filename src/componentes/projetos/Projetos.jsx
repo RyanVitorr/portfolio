@@ -6,20 +6,20 @@ const Projetos = () => {
     {
       id: 1,
       nome: "Reading-Time",
-      img: "/img/reading-time.png",
+      img: "img/reading-time.png",
       texto: "Reading-Time é um site de registro de leitura, que permite aos usuários acompanhar os livros que estão lendo, fornecendo uma forma eficiente de gerenciar sua lista de leitura.",
       mostrarTexto: false,
       completo: false,
-      link:""
+      link:"https://ryanvitorr.github.io/Reading_Time_react/"
     },
     {
       id: 2,
       nome: "Lista de Tarefas",
-      img: "/img/todolist.png",
+      img: "img/todolist.png",
       texto: "Lista de Tarefas é um site que permite aos usuários criar, organizar e gerenciar suas tarefas de forma eficiente.",
       mostrarTexto: false,
       completo: true,
-      link:""
+      link:"https://ryanvitorr.github.io/TodoList_react_vite_deploy/"
     },
   ]);
 
