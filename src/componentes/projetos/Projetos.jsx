@@ -10,7 +10,7 @@ const Projetos = () => {
       texto: "Reading-Time é um site de registro de leitura, que permite aos usuários acompanhar os livros que estão lendo, fornecendo uma forma eficiente de gerenciar sua lista de leitura.",
       mostrarTexto: false,
       completo: false,
-      link:"https://ryanvitorr.github.io/Reading_Time_react/"
+      link:"https://ryanvitorr.github.io/Reading_Time_react/clear"
     },
     {
       id: 2,
