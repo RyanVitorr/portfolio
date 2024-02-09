@@ -10,7 +10,7 @@ const Projetos = () => {
       texto: "Reading-Time é um site de registro de leitura, que permite aos usuários acompanhar os livros que estão lendo, fornecendo uma forma eficiente de gerenciar sua lista de leitura.",
       mostrarTexto: false,
       completo: false,
-      link:"https://ryanvitorr.github.io/Reading_Time_react/clear"
+      link:"https://ryanvitorr.github.io/Reading_Time_react/clear",
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const Projetos = () => {
       texto: "Lista de Tarefas é um site que permite aos usuários criar, organizar e gerenciar suas tarefas de forma eficiente.",
       mostrarTexto: false,
       completo: true,
-      link:"https://ryanvitorr.github.io/TodoList_react_vite_deploy/"
+      link:"https://ryanvitorr.github.io/TodoList_react_vite_deploy/",
     },
   ]);
 
