@@ -21,6 +21,15 @@ const Projetos = () => {
       completo: true,
       link:"https://ryanvitorr.github.io/TodoList_react_vite_deploy/",
     },
+    {
+      id: 3,
+      nome: "Play",
+      img: "img/play.png",
+      texto: "Play é um site de reprodução de audiobooks, uma plataforma online onde os usuários podem ouvir livros em formato de áudio",
+      mostrarTexto: false,
+      completo: false,
+      link:"https://ryanvitorr.github.io/play/",
+    }
   ]);
 
 
