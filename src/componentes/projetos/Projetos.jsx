@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ProjetosStyle.css';
+import CardProjetos from './CardProjetos/CardProjetos';
 
 const Projetos = () => {
   const [projetosList, setProjetosList] = useState([
@@ -32,14 +33,6 @@ const Projetos = () => {
     }
   ]);
 
-
-  const [state, setState] = useState(0);
-  const [saibaMais, setSaibaMais] = useState("Saber Mais!");
-  const handleClick = (id) => {
-    setSaibaMais(id === state ?'Saber Mais!'  :'Esconder Saber Mais!' )
-    setState(id === state ? null : id);
-  };
-
   return (
     <section className='projetos'>
       <div className="conteudo-projetos">
@@ -62,36 +55,8 @@ const Projetos = () => {
           </div>
         </div>
         <div className="infos-projetos">
-          {projetosList.map((projetos) => (
-            <div key={projetos.id} className='card-projetos'>
-              <div className='container-projeto'>
-                <div className='img-projeto'>
-                  <img src={projetos.img} />
-                </div>
-              </div>
-
-              <div className={"texto " + (state === projetos.id ? "ativo " : "")}>
-                <p>{projetos.texto}</p>
-              </div>
-
-              <div className='infos'>
-                <div className='nome-site'>
-                  <div className='nome-projeto'>
-                    <h1>{projetos.nome}</h1>
-                    <div className={'status ' + (projetos.completo ? 'completo' : 'incompleto')}>
-                      <i className={projetos.completo ? 'bi bi-check-lg' : 'bi bi-exclamation-lg'}></i>
-                    </div>
-                  </div>
-                  <div className='Link-projeto'>
-                    <a href={projetos.link} target='_blank' rel="noopener noreferrer">Ir para o site</a>
-                  </div>
-                </div>
-
-                <div className='saiba-mais' onClick={()=>{handleClick(projetos.id)}}>
-                  <button>{saibaMais}</button>
-                </div>
-              </div>
-            </div>
+          {projetosList.map((projeto) => (
+            <CardProjetos projeto={projeto} key={projeto.id}/>
           ))}
 
         </div>
