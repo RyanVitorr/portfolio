@@ -58,7 +58,7 @@
 }
 
 .infos-projetos::-webkit-scrollbar {
-    width: 5px;
+    width: 0px;
 }
 
 .card-projetos {

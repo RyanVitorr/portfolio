@@ -40,6 +40,13 @@ const Skills = () => {
       level: 2,
       texto: "/* Node.js é um software de código aberto, multiplataforma, que permite a execução de códigos JavaScript fora de um navegador web. */"
     },
+    {
+      id: 6,
+      nome: "SQL",
+      icone: "bi bi-filetype-sql",
+      level: 3,
+      texto: "/* SQL é uma linguagem de domínio específico desenvolvida para gerenciar dados relacionais em um sistema de gerenciamento de banco de dados. */"
+    }
   ]);
 
   /*  
