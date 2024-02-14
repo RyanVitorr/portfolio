@@ -16,6 +16,7 @@ const Sobre = () => {
                     <div className="imagem-sobre">
                         <div className="area-azul-img">
                             <div className="area-branca-img">
+                                <img src="img/fotoSobreMimP.png" alt="" />
                             </div>
                         </div>
                     </div>
