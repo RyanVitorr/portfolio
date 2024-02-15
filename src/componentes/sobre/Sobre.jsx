@@ -1,5 +1,6 @@
 import React from 'react';
 import '../sobre/SobreStyle.css';
+import img from '../img/fotosobre.png.jpg';
 
 const Sobre = () => {
     const apresentacao = "Olá! Sou Ryan Vitor, estudante de ADS, entusiasta da tecnologia e desenvolvedor Front-end com 7 meses de experiência. Estou procurando uma oportunidade de estágio para aprimorar minhas habilidades como Front-end e explorar o Back-end, com o objetivo de me tornar um desenvolvedor Full Stack. Estou animado para contribuir com minha paixão pela programação e crescer profissionalmente em um ambiente desafiador.";
@@ -16,7 +17,7 @@ const Sobre = () => {
                     <div className="imagem-sobre">
                         <div className="area-azul-img">
                             <div className="area-branca-img">
-                                <img src="img/fotoSobreMimP.png" alt="" />
+                                <img src="img/fotosobre.jpg" alt="" />
                             </div>
                         </div>
                     </div>
