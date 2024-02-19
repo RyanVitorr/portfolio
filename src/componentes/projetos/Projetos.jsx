@@ -9,6 +9,7 @@ const Projetos = () => {
       nome: "Reading-Time",
       img: "img/reading-time.png",
       texto: "Reading-Time é um site de registro de leitura, que permite aos usuários acompanhar os livros que estão lendo, fornecendo uma forma eficiente de gerenciar sua lista de leitura.",
+      tecnologias: "React.js e Styled-components.",
       mostrarTexto: false,
       completo: false,
       link:"https://ryanvitorr.github.io/Reading_Time_react",
@@ -18,6 +19,7 @@ const Projetos = () => {
       nome: "Lista de Tarefas",
       img: "img/todolist.png",
       texto: "Lista de Tarefas é um site que permite aos usuários criar, organizar e gerenciar suas tarefas de forma eficiente.",
+      tecnologias: "React.js e Styled-components.",
       mostrarTexto: false,
       completo: true,
       link:"https://ryanvitorr.github.io/TodoList_react_vite_deploy/",
@@ -27,9 +29,20 @@ const Projetos = () => {
       nome: "Play",
       img: "img/play.png",
       texto: "Play é um site de reprodução de audiobooks, uma plataforma online onde os usuários podem ouvir livros em formato de áudio",
+      tecnologias: "HTML5, CSS3 e JavaScript.",
       mostrarTexto: false,
       completo: false,
       link:"https://ryanvitorr.github.io/play/",
+    },
+    {
+      id: 4,
+      nome: "Expense Tracker",
+      img: "img/expense_tracker.png",
+      texto: "Expense Tracker é uma plataforma online projetada para ajudar os usuários a controlar suas finanças pessoais de forma eficiente.",
+      tecnologias: "Next.js, TypeScript e  Styled-components.",
+      mostrarTexto: false,
+      completo: false,
+      link:"https://expense-tracker-next-63u51ru01-ryan-vitors-projects.vercel.app/",
     }
   ]);
 

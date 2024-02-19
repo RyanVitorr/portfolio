@@ -146,6 +146,7 @@
     display: none;
     align-items: center;
     justify-content: center;
+    gap: 50px;
     margin-top: 10px;
     text-align: center;
     font-weight: bold;
@@ -153,6 +154,13 @@
     border-radius: 9px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.548);
     background-color: rgba(213, 218, 230, 0.74);
+}
+
+.texto > P:nth-child(2) {
+    padding: 0 30px;
+    text-align: left;
+    margin-top: 25px;
+    color: rgba(52, 78, 126, 0.938);
 }
 
 .ativo {

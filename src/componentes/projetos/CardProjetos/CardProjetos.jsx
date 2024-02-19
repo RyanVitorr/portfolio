@@ -23,6 +23,7 @@ const CardProjetos = ({ projeto }) => {
 
             <div className={"texto " + (state === projeto.id ? "ativo " : "")}>
                 <p>{projeto.texto}</p>
+                <p>Tecnologias: {projeto.tecnologias}</p>
             </div>
 
             <div className='infos'>
