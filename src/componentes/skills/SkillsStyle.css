@@ -2,38 +2,30 @@
 
 .skills {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     width: 100%;
     padding: 10px;
+    overflow: hidden;
 }
 
 .conteudo-skills {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 950px;
-    gap: 20px;
-}
-
-.titulo-skills {
-    padding: 10px;
-    color: rgb(80, 80, 80);
+    flex: 1;
+    gap: 25px;
 }
 
 .infos-skills {
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
+    flex: 1;
+    display: flex;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    max-height: 550px;
-    gap: 15px;
-    padding: 10px 0;
-    overflow: hidden;
-    overflow-y: scroll;
+    justify-content: top;
+    flex-direction: column;
+    height: 95%;
+    gap: 25px;
+    overflow: scroll;
+    border-radius: 8px;
 }
 
 .infos-skills::-webkit-scrollbar {
@@ -45,13 +37,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 220px;
-    gap: 15px;
+    width: 80%;
+    max-width: 250px;
+    height: 550px;
+    padding: 10px 0;
+    gap: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.548);
     border-radius: 10px;
     background-color: rgba(78, 117, 190, 0.74);
-    cursor: pointer;
     position: relative;
 }
 

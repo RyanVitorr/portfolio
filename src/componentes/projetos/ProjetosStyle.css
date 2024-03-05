@@ -2,19 +2,19 @@
 
 .projetos {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     width: 100%;
+    padding: 10px;
+    overflow: hidden;
     padding: 10px;
 }
 
 .conteudo-projetos {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 950px;
-    gap: 5px;
+    flex: 1;
+    gap: 20px;
 }
 
 .info-status {
