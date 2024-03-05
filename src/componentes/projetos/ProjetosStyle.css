@@ -17,6 +17,11 @@
     gap: 20px;
 }
 
+.titulo-projetos {
+    flex: 1;
+    padding: 10px 0;
+}
+
 .info-status {
     display: flex;
     flex-direction: column;
