@@ -43,7 +43,18 @@ const Projetos = () => {
       mostrarTexto: false,
       completo: false,
       link:"https://expense-tracker-next-63u51ru01-ryan-vitors-projects.vercel.app/",
+    },
+    {
+      id: 5,
+      nome: "My Film List",
+      img: "img/my_film_list.png",
+      texto: "My Film List é um site de registro de filmes, que permite aos usuários acompanhar os filmes que estão assistindo, fornecendo uma forma eficiente de gerenciar sua lista de filmes.",
+      tecnologias: "React Typescript e Taiwind CSS.",
+      mostrarTexto: false,
+      completo: true,
+      link:"https://rainbow-panda-567a9b.netlify.app/",
     }
+
   ]);
 
   return (
